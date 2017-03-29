@@ -1,0 +1,9 @@
+/*
+  PERSONAL SCORE
+*/
+
+.display__item {
+  margin: 0 auto;
+  background-color: map-get($personalScore, colorBG);
+  padding: map-get($personalScore, padding);
+}

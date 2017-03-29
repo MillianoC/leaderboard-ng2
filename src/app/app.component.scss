@@ -1,0 +1,93 @@
+/*
+Global Styles go here.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: map-get($colors, white);
+}
+
+.root-container {
+    width: 100%;
+}
+
+textarea, input, button {
+    outline: none;
+}
+
+.active {
+    border: 1px solid red;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+img {
+  width: 100%;
+}
+
+
+/*
+HEADER STYLE
+*/
+
+header {
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  .header-img {
+    width: 80vw;
+    height: 45vw;
+    max-width: 500px;
+    max-height: 281.25px;
+    margin: 0 auto;
+    background-size: contain;
+    background: map-get($colors, headerBG) map-get($headerImgs, small) no-repeat center center;
+
+    @media only screen and (min-width: map-get($screenBreaks, sm)) {
+      background-image: map-get($headerImgs, large);
+    }
+  }
+}
+
+/*
+  SVG CLASSES
+*/
+
+.st0{fill:#d53541;}
+.st1{fill:#7da1b6;}
+.st2{fill:#000;}
+.st3{font-family:'BookmanOldStyle-Bold';}
+.st4{font-size:77.8762px;}
+.st5{fill:#636466;}
+.st6{font-family:'BookAntiqua-Bold';}
+.st7{font-size:51.8762px;}
+.st8{letter-spacing:2;}
+.st9{letter-spacing:1.4;}
+
+#display-container svg {
+  -moz-box-shadow: map-get($optionalItem, svgShadow);
+  -webkit-box-shadow: map-get($optionalItem, svgShadow);
+  box-shadow: map-get($optionalItem, svgShadow);
+}
+
+.display__item {
+  width: 100%;
+  max-width: map-get($topScores, itemMaxWidth);
+  margin: map-get($topScores, itemMarginX) map-get($topScores, itemMarginY);
+}

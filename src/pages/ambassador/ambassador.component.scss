@@ -1,0 +1,62 @@
+/*
+  GENERAL
+*/
+
+#ambassador-container {
+    width: 100%;
+    color: map-get($colors, black);
+    text-align: center;
+}
+
+.form-error {
+    color: red;
+}
+
+
+/*
+  FORM
+*/
+
+form {
+
+  .form__row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em 0;
+  }
+
+
+  i {
+    margin-right: 10px;
+  }
+
+  input:not([type=submit]) {
+    font-size: 1.25em;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  input:not([type=submit]):focus {
+    background-color: #fff;
+    background-color: rgba(0,0,0,0.1);
+    color: #000;
+    border: 3px solid #000;
+  }
+
+  input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  button[type=submit] {
+    font-size: 1.25em;
+    border-radius: 20px;
+    background-color: #fff;
+    background-color: rgba(0,0,0,0.1);
+    border-color: #000;
+    box-shadow: 0 7px 6px -6px #000;
+  }
+}

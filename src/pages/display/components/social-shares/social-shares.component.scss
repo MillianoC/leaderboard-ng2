@@ -1,0 +1,47 @@
+/*
+  SOCIAL
+*/
+
+#social {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: map-get($social, colorBG);
+}
+
+#share-now-text:before {
+  content: map-get($shareNowText, content);
+}
+
+#share-now-text {
+  width: 100%;
+  text-align: center;
+  color: map-get($shareNowText, fontColor);
+  font-size: map-get($shareNowText, fontSize);;
+  margin-top: map-get($shareNowText, marginTop);;
+}
+
+.fa-stack:hover {
+  color: map-get($social, hoverBG);
+}
+
+#social .fa-inverse {
+  color: map-get($social, color);
+}
+
+#facebook {
+  display: map-get($social, facebook);
+}
+
+#twitter {
+  display: map-get($social, twitter);
+}
+
+#instagram {
+  display: map-get($social, instagram);
+}
+
+#pinterest {
+  display: map-get($social, pinterest);
+}

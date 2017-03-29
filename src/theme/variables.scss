@@ -1,0 +1,64 @@
+/*
+  GENERAL VARS
+*/
+
+$screenBreaks: (
+  xs: 500px,
+  sm: 600px,
+  md: 900px,
+  lg: 1200px
+);
+
+$colors: (
+  headerBG: #fff,           // Header logo background color
+  white: #fff,              // Generic white
+  black: #000               // Generic black
+);
+
+
+/*
+  HEADER VARS
+*/
+
+$headerImgs: (
+  large: url('src/app/assets/images/fusion_large.svg'),   // Large 16:9 header image
+  small: url('src/app/assets/images/fusion_small.svg')    // Small 16:9 header image
+);
+
+
+/*
+  DISPLAY VARS
+*/
+
+$personalScore: (
+  colorBG: #636466,       // Add colored or transparent padding on personal score
+  padding:  15px          // Padding size, set transparent and 0 to have none
+);
+
+$topScores: (
+  parentWidth: 1200px,    // Whatever you want the container max width to be
+  itemMaxWidth: 380px,    // parentWidth / itemMaxWidth + 2(itemMarginX) = items per row at screen > parentWidth
+  itemMarginX: 10px,      // See above
+  itemMarginY: 10px       // Simple vertical spacing on items
+);
+
+$shareNowText: (
+  content: "Share Now!",    // Text displayed above social icons
+  fontColor: #636466,       // Color of the text
+  fontSize: 2em,            // Font size of text
+  marginTop: 2em            // Mostly only here incase you want no content
+);
+
+$social: (
+  color: #fff,            // Color of the logo itself
+  colorBG: #636466,       // Color of the background normally
+  hoverBG: #d53541,       // Color of the background on hover
+  facebook: block,        // block -> displays, none -> hidden
+  twitter: block,         // block -> displays, none -> hidden
+  instagram: block,       // block -> displays, none -> hidden
+  pinterest: block        // block -> displays, none -> hidden
+);
+
+$optionalItem: (
+  svgShadow: 0 8px 6px -6px black     // This is 'box-shadow' shorthand, none removes all shadows
+)
